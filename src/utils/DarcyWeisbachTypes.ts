@@ -27,3 +27,8 @@ export type FluidVelocity = {
 export type KFactor = {
   K: number;
 };
+
+// Change in pressure
+export type Delta = {
+  del_p: number;
+};
