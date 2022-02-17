@@ -1,9 +1,8 @@
-// Volumetric flow rate
-export type VolumetricFlowRate = {
-  Q: number;
-};
+// Volumetric flow rate: Q
+export type VolumetricFlowRate = number;
 
 // Diameter
-export type Diameter = {
-  D: number;
-};
+export type Diameter = number;
+
+// Fluid velocity: v
+export type FluidVelocity = number;

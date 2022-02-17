@@ -1,34 +1,20 @@
-// Pipe length
-export type Pipelength = {
-  L: number;
-};
+// Pipe length: L
+export type Pipelength = number;
 
-// Friction factor
-export type FrictionFactor = {
-  f: number;
-};
+// Friction factor: f
+export type FrictionFactor = number;
 
-// Fluid density
-export type FluidDensity = {
-  rho: number;
-};
+// Fluid density: rho
+export type FluidDensity = number;
 
-// Pipe diameter
-export type PipeDiameter = {
-  D: number;
-};
+// Pipe diameter: D
+export type PipeDiameter = number;
 
-// Fluid velocity
-export type FluidVelocity = {
-  v: number;
-};
+// Fluid velocity: v
+export type FluidVelocity = number;
 
-// Length over diameter of a pipe
-export type KFactor = {
-  K: number;
-};
+// Length over diameter of a pipe: K
+export type KFactor = number;
 
-// Change in pressure
-export type Delta = {
-  del_p: number;
-};
+// Change in pressure: del_p
+export type Delta = number;
