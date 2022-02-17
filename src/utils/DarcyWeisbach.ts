@@ -38,7 +38,7 @@ function DarcyWeisbach_v(
   del_p: Delta
 ): number {
   const v = Math.pow((del_p / L) * (2 / rho) * (D / f), 0.5);
-  console.log(v, "veolcity");
+  console.log(v, "velocity");
   return v;
 }
 
