@@ -4,6 +4,7 @@ import type {
   FluidDensity,
   PipeDiameter,
   FluidVelocity,
+  KFactor
 } from "@/utils/DarcyWeisbachTypes";
 
 function DarcyWeisbach_delp(
@@ -20,4 +21,10 @@ function DarcyWeisbach_delp(
   return del_p;
 }
 
-export {};
+function DarcyWeisbach_K(K: KFactor, rho: FluidDensity, v: FluidVelocity) {
+  const del_p = K * (rho / 2) * Math.pow(v, 2);
+  console.log(del_p, "pdrop");
+  return del_p;
+}
+
+export { DarcyWeisbach_delp };

@@ -22,3 +22,8 @@ export type PipeDiameter = {
 export type FluidVelocity = {
   v: number;
 };
+
+// Length over diameter of a pipe
+export type KFactor = {
+  K: number;
+};
