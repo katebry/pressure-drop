@@ -1,4 +1,4 @@
-import { expect } from "@jest/globals";
+import { expect, test } from "@jest/globals";
 import { ReynoldsNumber } from "../ReynoldsNumber";
 
 test("If 1's are passed into the ReynoldsNumber function, 1 is returned", () => {
