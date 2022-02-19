@@ -6,7 +6,7 @@ import type {
   FluidVelocity,
   KFactor,
   Delta,
-} from "@/utils/DarcyWeisbachTypes";
+} from "@/utils/PressureDropTypes";
 
 function DarcyWeisbach_delp(
   L: Pipelength,

@@ -3,7 +3,7 @@ import type {
   FluidVelocity,
   FluidViscosity,
   PipeDiameter,
-} from "@/utils/ReynoldsNumberTypes";
+} from "@/utils/PressureDropTypes";
 
 function Reynolds_Number(
   rho: FluidDensity,
