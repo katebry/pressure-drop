@@ -39,3 +39,6 @@ npm run test:e2e # or `npm run test:e2e:ci` for headless testing
 ```sh
 npm run lint
 ```
+
+### Resources
+[Reynolds number](https://en.wikipedia.org/wiki/Reynolds_number)
