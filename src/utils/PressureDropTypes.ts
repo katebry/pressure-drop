@@ -24,3 +24,9 @@ export type FluidViscosity = number;
 
 // Volumetric flow rate: Q
 export type VolumetricFlowRate = number;
+
+// Reynolds number: Re
+export type ReynoldsNumber = number;
+
+// Pipe roughness: e
+export type PipeRoughness = number;
