@@ -11,9 +11,7 @@ function ReynoldsNumber(
   D: PipeDiameter,
   mu: FluidViscosity
 ): number {
-  const Re = (rho * v * D) / mu;
-  console.log(Re, "reynolds number");
-  return Re;
+  return (rho * v * D) / mu;
 }
 
 export { ReynoldsNumber };
