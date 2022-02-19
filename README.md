@@ -41,6 +41,6 @@ npm run lint
 ```
 
 ### Resources
-[Reynolds number](https://en.wikipedia.org/wiki/Reynolds_number)
+[Wikipedia - Reynolds number](https://en.wikipedia.org/wiki/Reynolds_number)
 
-[The Engineering Toolbox - Reynolds Number](https://www.engineeringtoolbox.com/reynolds-number-d_237.html)
+[The Engineering Toolbox - Reynolds number](https://www.engineeringtoolbox.com/reynolds-number-d_237.html)
