@@ -1,6 +1,6 @@
-import { Reynolds_Number } from "@/utils/ReynoldsNumber";
 import { expect } from "@jest/globals";
+import { ReynoldsNumber } from "../ReynoldsNumber";
 
-test("If nothing is passed to the Reynolds number, nothing is returned", () => {
-  expect(Reynolds_Number()).toBe(false);
+test("If 1's are passed into the ReynoldsNumber function, 1 is returned", () => {
+  expect(ReynoldsNumber(1, 1, 1, 1)).toBe(1);
 });

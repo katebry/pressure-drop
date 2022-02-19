@@ -1,4 +1,5 @@
 export default {
+  modulePaths: ["<rootDir>"],
   transform: {
     "^.+\\.tsx?$": "ts-jest",
   },

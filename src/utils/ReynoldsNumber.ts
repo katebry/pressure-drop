@@ -5,7 +5,7 @@ import type {
   PipeDiameter,
 } from "@/utils/PressureDropTypes";
 
-function Reynolds_Number(
+function ReynoldsNumber(
   rho: FluidDensity,
   v: FluidVelocity,
   D: PipeDiameter,
@@ -16,4 +16,4 @@ function Reynolds_Number(
   return Re;
 }
 
-export { Reynolds_Number };
+export { ReynoldsNumber };
