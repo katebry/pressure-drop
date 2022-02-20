@@ -44,3 +44,5 @@ npm run lint
 [Wikipedia - Reynolds number](https://en.wikipedia.org/wiki/Reynolds_number)
 
 [The Engineering Toolbox - Reynolds number](https://www.engineeringtoolbox.com/reynolds-number-d_237.html)
+
+[The Engineering Toolbox - Colebrook Equation](https://www.engineeringtoolbox.com/colebrook-equation-d_1031.html)
