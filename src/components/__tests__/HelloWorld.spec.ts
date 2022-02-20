@@ -11,3 +11,5 @@ describe("HelloWorld", () => {
     cy.get("h1").should("contain", "Hello Cypress");
   });
 });
+
+export {}
