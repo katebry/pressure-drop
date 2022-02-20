@@ -7,6 +7,6 @@ test("The velocity is returned when two vales are passed into the Q_to_v functio
 });
 
 test("The volumetric flow rate is returned when two vales are passed into the Q_to_v function", () => {
-    expect(v_to_Q(14, 8)).toBe(0.2785211504108169);
-    expect(v_to_Q(140, 8.96)).toBe(2.2203535587597005);
+  expect(v_to_Q(14, 8)).toBe(0.2785211504108169);
+  expect(v_to_Q(140, 8.96)).toBe(2.2203535587597005);
 });

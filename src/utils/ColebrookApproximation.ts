@@ -15,10 +15,7 @@ function Colebrook_Approximation(
   const C = Math.log(x);
 
   const f_working = 0.8685972 * (B - C + C / (x - 0.5588 * C + 1.2079));
-  const f = 1 / Math.pow(f_working, 2);
-  console.log(Re, "Re");
-  console.log(f_working, "f_working");
-  return f;
+  return 1 / Math.pow(f_working, 2);
 }
 
 export { Colebrook_Approximation };
