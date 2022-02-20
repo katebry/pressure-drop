@@ -15,9 +15,7 @@ function DarcyWeisbach_delp(
   D: PipeDiameter,
   v: FluidVelocity
 ): number {
-  const del_p = L * f * (rho / 2) * (Math.pow(v, 2) / D);
-  console.log(del_p, "pdrop");
-  return del_p;
+  return L * f * (rho / 2) * (Math.pow(v, 2) / D);
 }
 
 function DarcyWeisbach_K(
@@ -25,9 +23,7 @@ function DarcyWeisbach_K(
   rho: FluidDensity,
   v: FluidVelocity
 ): number {
-  const del_p = K * (rho / 2) * Math.pow(v, 2);
-  console.log(del_p, "pdrop");
-  return del_p;
+  return K * (rho / 2) * Math.pow(v, 2);
 }
 
 function DarcyWeisbach_v(
@@ -37,9 +33,7 @@ function DarcyWeisbach_v(
   D: PipeDiameter,
   del_p: Delta
 ): number {
-  const v = Math.pow((del_p / L) * (2 / rho) * (D / f), 0.5);
-  console.log(v, "velocity");
-  return v;
+  return Math.pow((del_p / L) * (2 / rho) * (D / f), 0.5);
 }
 
 export { DarcyWeisbach_delp, DarcyWeisbach_K, DarcyWeisbach_v };

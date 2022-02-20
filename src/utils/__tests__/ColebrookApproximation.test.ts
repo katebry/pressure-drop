@@ -1,7 +1,7 @@
 import { expect, test } from "@jest/globals";
 import { Colebrook_Approximation } from "../ColebrookApproximation";
 
-test("The velocity is returned when two vales are passed into the Q_to_v function", () => {
+test("The friction factor approximation is returned when parameters are passed in", () => {
   expect(Colebrook_Approximation(131749.19999999998, 0.05, 8)).toBe(
     0.03312240910904646
   );
