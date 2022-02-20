@@ -21,19 +21,6 @@ npm run dev
 npm run build
 ```
 
-### Run Unit Tests with [Cypress Component Testing](https://docs.cypress.io/guides/component-testing/introduction)
-
-```sh
-npm run test:unit # or `npm run test:unit:ci` for headless testing
-```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-npm run build
-npm run test:e2e # or `npm run test:e2e:ci` for headless testing
-```
-
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
