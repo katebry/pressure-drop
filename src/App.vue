@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import Header from "./components/Header.vue";
+import InputData from "./components/InputData.vue";
 </script>
 
 <template>
   <div class="parent">
     <Header class="header" msg="You did it!" />
+    <InputData class="inputData" />
   </div>
 </template>
 
@@ -19,5 +21,9 @@ import Header from "./components/Header.vue";
 
 .header {
   grid-area: 1 / 2 / 2 / 5;
+}
+
+.inputData {
+  grid-area: 2 / 2 / 4 / 4;
 }
 </style>
