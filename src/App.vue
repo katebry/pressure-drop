@@ -6,7 +6,7 @@ import InputData from "./components/InputData.vue";
 <template>
   <div class="parent">
     <Header class="header" msg="You did it!" />
-    <InputData class="inputData" />
+    <InputData />
   </div>
 </template>
 
@@ -21,9 +21,5 @@ import InputData from "./components/InputData.vue";
 
 .header {
   grid-area: 1 / 2 / 2 / 5;
-}
-
-.inputData {
-  grid-area: 2 / 2 / 4 / 4;
 }
 </style>
