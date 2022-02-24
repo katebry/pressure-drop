@@ -22,7 +22,6 @@ export default {
 </script>
 
 <template>
-  <div class="wrapper">
     <div v-for="input in InputDataFields" :key="input.id">
       <CustomInput
         :label="input.label"
@@ -30,13 +29,4 @@ export default {
         :unit="input.unit"
       />
     </div>
-  </div>
 </template>
-
-<style scoped>
-.wrapper {
-  /*grid-area: 2 / 2 / 4 / 4;*/
-  /*display: flex;*/
-  /*flex-direction: column;*/
-}
-</style>

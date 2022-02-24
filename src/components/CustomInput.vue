@@ -25,6 +25,7 @@ export default {
 input {
   font-size: 19px;
   padding: 3px;
+  max-height: 22px;
 }
 .container {
   display: grid;
