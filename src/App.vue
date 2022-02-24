@@ -6,7 +6,9 @@ import InputData from "./components/InputData.vue";
 <template>
   <div class="parent">
     <SiteHeader class="header" />
-    <InputData />
+    <div class="mainContent">
+      <InputData />
+    </div>
   </div>
 </template>
 
@@ -17,6 +19,7 @@ html,
 app,
 body {
   font-family: "Roboto Slab", serif;
+  font-size: 19px;
 }
 
 .parent {
@@ -29,5 +32,12 @@ body {
 
 .header {
   grid-area: 1 / 2 / 2 / 5;
+}
+
+.mainContent {
+  grid-area: 2 / 2 / 5 / 5;
+  background-color: #1E6FB8;
+  padding: 3rem;
+  border-radius: 1rem;
 }
 </style>
