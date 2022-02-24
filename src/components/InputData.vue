@@ -7,7 +7,12 @@ export default {
     return {
       InputDataFields: [
         { id: "density", label: "Density", unit: "kg/m3", value: 0 },
-        { id: "viscosity", label: "Dynamic viscosity", unit: "kg/ms", value: 0 },
+        {
+          id: "viscosity",
+          label: "Dynamic viscosity",
+          unit: "kg/ms",
+          value: 0,
+        },
         { id: "roughness", label: "Pipe roughness", unit: "mm", value: 0 },
         { id: "flowrate", label: "Flowrate", unit: "l/min", value: 0 },
       ],
@@ -18,9 +23,8 @@ export default {
 
 <template>
   <div class="wrapper">
-    <div v-for="input in InputDataFields">
+    <div v-for="input in InputDataFields" :key="input.id">
       <CustomInput
-        :key="input.id"
         :label="input.label"
         v-model="input.value"
         :unit="input.unit"
@@ -35,5 +39,4 @@ export default {
   display: flex;
   flex-direction: column;
 }
-
 </style>

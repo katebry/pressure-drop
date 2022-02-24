@@ -1,6 +1,6 @@
 <script>
 export default {
-  props: ["key", "modelValue", "label", "unit"],
+  props: ["modelValue", "label", "unit"],
   emits: ["update:modelValue"],
 };
 </script>
