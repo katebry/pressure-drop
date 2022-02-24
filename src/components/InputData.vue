@@ -14,7 +14,7 @@ export default {
           value: 0,
         },
         { id: "roughness", label: "Pipe roughness", unit: "mm", value: 0 },
-        { id: "flowrate", label: "Flowrate", unit: "l/min", value: 0 },
+        { id: "flowrate", label: "Flow rate", unit: "l/min", value: 0 },
       ],
     };
   },

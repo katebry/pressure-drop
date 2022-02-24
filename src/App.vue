@@ -11,6 +11,17 @@ import InputData from "./components/InputData.vue";
 </template>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
+
+html,
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+app {
+  font-family: "Roboto Slab", serif;
+}
+
 .parent {
   display: grid;
   grid-template-columns: 1fr repeat(3, 2fr) 1fr;
