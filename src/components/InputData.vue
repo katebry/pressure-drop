@@ -1,8 +1,21 @@
+<script>
+import CustomInput from "./CustomInput.vue";
+
+export default {
+  components: { CustomInput },
+  data() {
+    return {
+      density: "0",
+    };
+  },
+};
+</script>
+
 <template>
   <div class="wrapper">
     <div class="row">
       Density
-      <input type="number" />
+      <CustomInput v-model="density" />
       kg/m3
     </div>
     <div class="row">
@@ -26,7 +39,6 @@
 <style scoped>
 .wrapper {
   grid-area: 2 / 2 / 4 / 4;
-  /*padding: 90px;*/
 }
 
 .row {
