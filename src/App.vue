@@ -5,7 +5,7 @@ import InputData from "./components/InputData.vue";
 
 <template>
   <div class="parent">
-    <Header class="header" msg="You did it!" />
+    <Header class="header" />
     <InputData />
   </div>
 </template>
