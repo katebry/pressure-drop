@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import Header from "./components/Header.vue";
+import SiteHeader from "./components/SiteHeader.vue";
 import InputData from "./components/InputData.vue";
 </script>
 
 <template>
   <div class="parent">
-    <Header class="header" />
+    <SiteHeader class="header" />
     <InputData />
   </div>
 </template>
@@ -14,11 +14,8 @@ import InputData from "./components/InputData.vue";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
 
 html,
+app,
 body {
-  font-family: "Roboto Slab", serif;
-}
-
-app {
   font-family: "Roboto Slab", serif;
 }
 
