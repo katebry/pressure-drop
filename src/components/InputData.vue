@@ -35,8 +35,8 @@ export default {
 
 <style scoped>
 .wrapper {
-  grid-area: 2 / 2 / 4 / 4;
-  display: flex;
-  flex-direction: column;
+  /*grid-area: 2 / 2 / 4 / 4;*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
 }
 </style>

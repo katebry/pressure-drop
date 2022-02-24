@@ -6,15 +6,15 @@ export default {
 </script>
 
 <template>
-  <div class="label">
-    {{ label }}
-  </div>
-  <div class="inputWrapper">
-    <input
-      type="number"
-      :value="modelValue"
-      @input="$emit('update:modelValue', $event.target.value)"
-    />
+  <div class="container">
+    <label>
+      {{ label }}
+    </label>
+      <input
+        type="number"
+        :value="modelValue"
+        @input="$emit('update:modelValue', $event.target.value)"
+      />
     <div class="unit">
       {{ unit }}
     </div>
@@ -24,17 +24,16 @@ export default {
 <style scoped>
 input {
   font-size: 19px;
+  padding: 3px;
 }
-.label {
-  grid-area: 2 / 2 / 4 / 3;
-  margin: 10px 0;
-}
-.inputWrapper {
-  grid-area: 2 / 3 / 4 / 4;
-  display: flex;
+.container {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
+  grid-gap: 20px;
+  padding: 15px;
 }
 .unit {
   font-weight: bold;
-  margin-left: 10px;
 }
 </style>

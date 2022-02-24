@@ -36,7 +36,7 @@ body {
 
 .mainContent {
   grid-area: 2 / 2 / 5 / 5;
-  background-color: #2280D3;
+  background-color: #2280d3;
   padding: 3rem;
   border-radius: 1rem;
 }
