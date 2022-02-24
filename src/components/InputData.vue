@@ -5,7 +5,12 @@ export default {
   components: { CustomInput },
   data() {
     return {
-      density: "0",
+      InputDataFields: [
+        { id: "density", label: "Density", unit: "kg/m3", value: 0 },
+        { id: "viscosity", label: "Dynamic viscosity", unit: "kg/ms", value: 0 },
+        { id: "roughness", label: "Pipe roughness", unit: "mm", value: 0 },
+        { id: "flowrate", label: "Flowrate", unit: "l/min", value: 0 },
+      ],
     };
   },
 };
@@ -13,25 +18,13 @@ export default {
 
 <template>
   <div class="wrapper">
-    <div class="row">
-      Density
-      <CustomInput v-model="density" />
-      kg/m3
-    </div>
-    <div class="row">
-      Dynamic viscosity
-      <input type="number" />
-      kg/ms
-    </div>
-    <div class="row">
-      Pipe roughness
-      <input type="number" />
-      mm
-    </div>
-    <div class="row">
-      Flowrate
-      <input type="number" />
-      l/min
+    <div v-for="input in InputDataFields">
+      <CustomInput
+        :key="input.id"
+        :label="input.label"
+        v-model="input.value"
+        :unit="input.unit"
+      />
     </div>
   </div>
 </template>
@@ -39,9 +32,8 @@ export default {
 <style scoped>
 .wrapper {
   grid-area: 2 / 2 / 4 / 4;
+  display: flex;
+  flex-direction: column;
 }
 
-.row {
-  display: flex;
-}
 </style>
