@@ -10,11 +10,11 @@ export default {
     <label>
       {{ label }}
     </label>
-      <input
-        type="number"
-        :value="modelValue"
-        @input="$emit('update:modelValue', $event.target.value)"
-      />
+    <input
+      type="number"
+      :value="modelValue"
+      @input="$emit('update:modelValue', $event.target.value)"
+    />
     <div class="unit">
       {{ unit }}
     </div>
