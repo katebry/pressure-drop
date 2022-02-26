@@ -33,8 +33,13 @@ export default {
     };
   },
   methods: {
-    calculateValues() {
-      console.log(this.data.InputDataFields[0]);
+    calculateValues(this: any, {density, viscosity, roughness, flowrate } = {
+      density: this.InputDataFields[0].value,
+      viscosity: this.InputDataFields[1].value,
+      roughness: this.InputDataFields[2].value,
+      flowrate: this.InputDataFields[3].value
+    }) {
+      console.log(density, viscosity, roughness, flowrate);
     },
   },
 };
