@@ -2,12 +2,12 @@
   <button @click="$emit('calculate')">{{ text }}</button>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   props: {
     text: String,
   },
-  emits: ["calculate"]
+  emits: ["calculate"],
 };
 </script>
 

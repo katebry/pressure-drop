@@ -1,10 +1,3 @@
-<script>
-export default {
-  props: ["modelValue", "label", "unit"],
-  emits: ["update:modelValue"],
-};
-</script>
-
 <template>
   <div class="container">
     <label>
@@ -20,6 +13,13 @@ export default {
     </div>
   </div>
 </template>
+
+<script lang="ts">
+export default {
+  props: ["modelValue", "label", "unit"],
+  emits: ["update:modelValue"],
+};
+</script>
 
 <style scoped>
 input {

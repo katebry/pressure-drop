@@ -1,4 +1,17 @@
-<script>
+<template>
+  <div v-for="input in InputDataFields" :key="input.id">
+    <CustomInput
+      :label="input.label"
+      v-model="input.value"
+      :unit="input.unit"
+    />
+  </div>
+  <div class="calculateBtn">
+    <CustomButton @calculate="calculateValues" text="Calculate" />
+  </div>
+</template>
+
+<script lang="ts">
 import CustomInput from "./CustomInput.vue";
 import CustomButton from "./CustomButton.vue";
 
@@ -19,21 +32,13 @@ export default {
       ],
     };
   },
+  methods: {
+    calculateValues() {
+      console.log(this.data.InputDataFields[0]);
+    },
+  },
 };
 </script>
-
-<template>
-  <div v-for="input in InputDataFields" :key="input.id">
-    <CustomInput
-      :label="input.label"
-      v-model="input.value"
-      :unit="input.unit"
-    />
-  </div>
-  <div class="calculateBtn">
-    <CustomButton text="Calculate" />
-  </div>
-</template>
 
 <style scoped>
 .calculateBtn {
