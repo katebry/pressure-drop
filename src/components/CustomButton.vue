@@ -1,5 +1,5 @@
 <template>
-  <button>{{ text }}</button>
+  <button @click="$emit('calculate')">{{ text }}</button>
 </template>
 
 <script>
@@ -7,6 +7,7 @@ export default {
   props: {
     text: String,
   },
+  emits: ["calculate"]
 };
 </script>
 
