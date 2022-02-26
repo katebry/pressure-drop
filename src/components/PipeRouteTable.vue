@@ -1,4 +1,6 @@
-<template></template>
+<template>
+  <h2>Pipe Table Placeholder...</h2>
+</template>
 
 <script>
 export default {

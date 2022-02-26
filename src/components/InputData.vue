@@ -15,6 +15,15 @@
 import CustomInput from "./CustomInput.vue";
 import CustomButton from "./CustomButton.vue";
 
+interface InputDataFieldsInterface {
+  InputDataFields: {
+    id: string;
+    label: string;
+    unit: string;
+    value: number;
+  };
+}
+
 export default {
   components: { CustomButton, CustomInput },
   data() {
@@ -33,12 +42,15 @@ export default {
     };
   },
   methods: {
-    calculateValues(this: any, {density, viscosity, roughness, flowrate } = {
-      density: this.InputDataFields[0].value,
-      viscosity: this.InputDataFields[1].value,
-      roughness: this.InputDataFields[2].value,
-      flowrate: this.InputDataFields[3].value
-    }) {
+    calculateValues(
+      this: InputDataFieldsInterface,
+      { density, viscosity, roughness, flowrate } = {
+        density: this.InputDataFields[0].value,
+        viscosity: this.InputDataFields[1].value,
+        roughness: this.InputDataFields[2].value,
+        flowrate: this.InputDataFields[3].value,
+      }
+    ) {
       console.log(density, viscosity, roughness, flowrate);
     },
   },
