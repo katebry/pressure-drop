@@ -9,14 +9,16 @@
   <div class="calculateBtn">
     <CustomButton @calculate="calculateValues" text="Calculate" />
   </div>
+  <PipeRouteTable />
 </template>
 
 <script lang="ts">
 import CustomInput from "./CustomInput.vue";
 import CustomButton from "./CustomButton.vue";
+import PipeRouteTable from "./PipeRouteTable.vue";
 
 export default {
-  components: { CustomButton, CustomInput },
+  components: { CustomButton, CustomInput, PipeRouteTable },
   data() {
     return {
       InputDataFields: [
