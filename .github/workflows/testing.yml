@@ -11,5 +11,6 @@ jobs:
         uses: actions/checkout@v2
       - run: npm install
       - run: npm run lint
+      - run: echo "linting check passed 👍"
       - run: npm run test:jest
       - run: echo "🍏 This job's status is ${{ job.status }}."
