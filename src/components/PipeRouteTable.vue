@@ -3,12 +3,12 @@
   <table id="secondTable">
     <thead>
       <tr>
-        <th v-for="col in columns">{{ col }}</th>
+        <th v-for="col in columns" :key="col.id">{{ col }}</th>
       </tr>
     </thead>
     <tbody>
-      <tr v-for="row in rows">
-        <td v-for="col in columns">{{ row[col] }}</td>
+      <tr v-for="row in rows" :key="row.indexOf()">
+        <td v-for="col in columns" :key="col.id">{{ row[col] }}</td>
       </tr>
     </tbody>
   </table>
