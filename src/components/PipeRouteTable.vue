@@ -7,7 +7,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="row in rows" :key="row.indexOf()">
+      <tr v-for="(row, key) in rows" :key="key">
         <td v-for="col in columns" :key="col.id">{{ row[col] }}</td>
       </tr>
     </tbody>
