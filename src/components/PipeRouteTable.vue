@@ -41,9 +41,6 @@ export default {
         { heading: "Item Pressure Drop" },
         { heading: "Pressure Drop Total" },
       ],
-      rows: [
-        {}
-      ]
     };
   },
   computed: {
